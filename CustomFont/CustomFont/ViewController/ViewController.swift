@@ -11,47 +11,42 @@ final class ViewController: UIViewController {
 
     private var fontRowIndex = 0
     private var changeFontlabel:UILabel!
-//    private var changeFontButton:UIButton!
+    private var changeFontButton:UIButton!
     private var fontTableView:UITableView!
     private var fontModel:Model!
-    var view:View
-//    private var delegate:changeFontDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view = View()
-        view.setupView()
         fontModel = CustomFont.Model()
         
-        let cellNib = UINib(nibName: "TableViewCell", bundle: nil)
-        view.fontTableView.register(cellNib, forCellReuseIdentifier: fontModel.identifier)
+        fontTableView = UITableView()
+        fontTableView.backgroundColor = .black
+        fontTableView.frame = view.bounds
+        view.addSubview(fontTableView)
         
-        view.fontTableView.delegate = self
-        view.fontTableView.dataSource = self
+        let cellNib = UINib(nibName: "TableViewCell", bundle: nil)
+        fontTableView.register(cellNib, forCellReuseIdentifier: fontModel.identifier)
+        
+        fontTableView.delegate = self
+        fontTableView.dataSource = self
+    
+        changeFontlabel = UILabel()
+        changeFontlabel.layer.cornerRadius = view.frame.width / 3 / 2
+        changeFontlabel.layer.masksToBounds = true
+        changeFontlabel.isUserInteractionEnabled = true
+        changeFontlabel.text = "change"
+        changeFontlabel.textAlignment = .center
+        changeFontlabel.textColor = .black
+        changeFontlabel.backgroundColor = .yellow
+        changeFontlabel.frame = CGRect(x: view.center.x - (view.frame.width / 3)/2,
+                                        y: view.frame.size.height - view.frame.width / 3 - 60,
+                                        width: view.frame.width / 3,
+                                        height: view.frame.width / 3)
+        view.addSubview(changeFontlabel)
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(changeFont(_:)))
-        view.changeFontlabel.addGestureRecognizer(gesture)
-//        fontTableView = UITableView()
-//        changeFontlabel = UILabel()
-//        fontTableView.backgroundColor = .black
-//        fontTableView.frame = view.bounds
-//        view.addSubview(fontTableView)
-    
-//        changeFontlabel = UILabel()
-//        changeFontlabel.layer.cornerRadius = view.frame.width / 3 / 2
-//        changeFontlabel.layer.masksToBounds = true
-//        changeFontlabel.isUserInteractionEnabled = true
-//        changeFontlabel.text = "change"
-//        changeFontlabel.textAlignment = .center
-//        changeFontlabel.textColor = .black
-//        changeFontlabel.backgroundColor = .yellow
-//        changeFontlabel.frame = CGRect(x: view.center.x - (view.frame.width / 3)/2,
-//                                        y: view.frame.size.height - view.frame.width / 3 - 60,
-//                                        width: view.frame.width / 3,
-//                                        height: view.frame.width / 3)
-
-//        view.addSubview(changeFontlabel)
+        changeFontlabel.addGestureRecognizer(gesture)
     }
     
     @objc func changeFont(_ sender:AnyObject){
