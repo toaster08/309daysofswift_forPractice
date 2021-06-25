@@ -31,7 +31,7 @@
             <connections>
                 <outlet property="titleLabel" destination="ulz-aw-Flf" id="Woi-Vl-qQz"/>
             </connections>
-            <point key="canvasLocation" x="-4.3478260869565224" y="-70.3125"/>
+            <point key="canvasLocation" x="-233" y="-2"/>
         </view>
     </objects>
     <resources>
