@@ -35,6 +35,9 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Xb9-G8-KQT"/>
                                         </constraints>
                                         <state key="normal" image="playBtn"/>
+                                        <connections>
+                                            <action selector="playMovieButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8yX-RO-5p4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18Z-Lw-Ydy">
                                         <rect key="frame" x="79.5" y="113" width="41.5" height="20.5"/>
@@ -73,7 +76,6 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="button" destination="xvB-dr-ciw" id="GyR-iz-5xt"/>
                 <outlet property="videoScreenshot" destination="taC-Fc-6hB" id="ItQ-kZ-fE6"/>
                 <outlet property="videoSourceLabel" destination="jpl-aR-rgE" id="uXh-lU-Hof"/>
                 <outlet property="videoTitleLabel" destination="18Z-Lw-Ydy" id="hrm-HJ-udY"/>

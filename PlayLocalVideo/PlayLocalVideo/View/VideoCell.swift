@@ -7,10 +7,9 @@
 
 import UIKit
 
-struct Video {
-    let image: String
-    let title: String
-    let source: String
+
+protocol playMovieDelegate: class{
+    func play()
 }
 
 class VideoCell: UITableViewCell {
@@ -18,22 +17,26 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var videoScreenshot: UIImageView!
     @IBOutlet weak var videoTitleLabel: UILabel!
     @IBOutlet weak var videoSourceLabel: UILabel!
-    @IBOutlet weak var button: UIButton!
-
+    
+    weak var delegate: playMovieDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        button.frame = CGRect(x: videoScreenshot.center.x,
-//                              y: videoScreenshot.center.y,
-//                              width: 200, height: 100)
-        
+//        print("Storyboardまたはnibファイルからロードされた直後に呼ばれる")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
- 
+//        print("選択状態と通常状態の状態アニメーション処理")
     }
     
+    @IBAction func playMovieButton(_ sender:AnyObject) {
+        print("delegateに渡します")
+        self.delegate?.play()
+        print("delegateを実行しました")
+    }
 }
+
+

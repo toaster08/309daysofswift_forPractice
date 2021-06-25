@@ -7,10 +7,17 @@
 
 import Foundation
 
+struct Video {
+    let image: String
+    let title: String
+    let source: String
+}
+
 class VideoModel{
     
     var data = [
-        Video(image: "videoScreenShow01",
+        
+        Video(image: "videoScreenshot01",
               title: "Introduce #DS Mario",
               source: "Youtube - 06:32"),
         Video(image: "videoScreenshot02",

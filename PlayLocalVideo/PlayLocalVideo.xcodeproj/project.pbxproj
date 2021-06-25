@@ -16,6 +16,7 @@
 		8AC6CFD32683E6CC00863EDB /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC6CFD22683E6CC00863EDB /* VideoModel.swift */; };
 		8AC6CFD92683ECDA00863EDB /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC6CFD72683ECDA00863EDB /* VideoCell.swift */; };
 		8AC6CFDA2683ECDA00863EDB /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC6CFD82683ECDA00863EDB /* VideoCell.xib */; };
+		8AE32F442685FF210047011B /* emoji_zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8AE32F432685FF200047011B /* emoji_zone.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8AC6CFD22683E6CC00863EDB /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		8AC6CFD72683ECDA00863EDB /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		8AC6CFD82683ECDA00863EDB /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		8AE32F432685FF200047011B /* emoji_zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = emoji_zone.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		8AC6CFB92683D37B00863EDB /* PlayLocalVideo */ = {
 			isa = PBXGroup;
 			children = (
+				8AE32F3F2685FA7F0047011B /* Movie */,
 				8AC6CFDE2683EFC400863EDB /* ViewController */,
 				8AC6CFDD2683EFB200863EDB /* View */,
 				8AC6CFDC2683EFA200863EDB /* Model */,
@@ -98,6 +101,14 @@
 				8AC6CFBE2683D37B00863EDB /* ViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8AE32F3F2685FA7F0047011B /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				8AE32F432685FF200047011B /* emoji_zone.mp4 */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE32F442685FF210047011B /* emoji_zone.mp4 in Resources */,
 				8AC6CFC72683D37E00863EDB /* LaunchScreen.storyboard in Resources */,
 				8AC6CFDA2683ECDA00863EDB /* VideoCell.xib in Resources */,
 				8AC6CFC42683D37E00863EDB /* Assets.xcassets in Resources */,
