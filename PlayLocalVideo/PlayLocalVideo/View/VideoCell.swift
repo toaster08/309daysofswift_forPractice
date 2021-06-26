@@ -7,9 +7,8 @@
 
 import UIKit
 
-
 protocol playMovieDelegate: class{
-    func play()
+    func playMovie() -> Void
 }
 
 class VideoCell: UITableViewCell {
@@ -32,11 +31,10 @@ class VideoCell: UITableViewCell {
 //        print("選択状態と通常状態の状態アニメーション処理")
     }
     
-    @IBAction func playMovieButton(_ sender:AnyObject) {
+    @IBAction func playMovieButton(_ sender:Any) {
         print("delegateに渡します")
-        self.delegate?.play()
+        self.delegate?.playMovie()
         print("delegateを実行しました")
     }
 }
-
 
