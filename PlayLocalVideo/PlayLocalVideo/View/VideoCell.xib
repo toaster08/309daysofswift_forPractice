@@ -36,7 +36,7 @@
                                         </constraints>
                                         <state key="normal" image="playBtn"/>
                                         <connections>
-                                            <action selector="playMovieButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8yX-RO-5p4"/>
+                                            <action selector="playMovieButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6gX-EQ-1OG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18Z-Lw-Ydy">
