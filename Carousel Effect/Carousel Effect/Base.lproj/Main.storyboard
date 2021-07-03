@@ -26,8 +26,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TeP-kX-qCU">
-                                            <rect key="frame" x="8" y="87" width="398" height="722"/>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TeP-kX-qCU">
+                                            <rect key="frame" x="10" y="87" width="394" height="722"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="jav-Ys-tkC">
                                                 <size key="itemSize" width="300" height="400"/>
@@ -74,7 +74,7 @@
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="OnM-aN-Iem" secondAttribute="trailing" id="6i0-aJ-2uA"/>
-                                                            <constraint firstItem="W3A-oP-p8o" firstAttribute="leading" secondItem="eeU-Hi-U8w" secondAttribute="leading" id="9YJ-Ri-p7y"/>
+                                                            <constraint firstItem="W3A-oP-p8o" firstAttribute="leadingMargin" secondItem="eeU-Hi-U8w" secondAttribute="leadingMargin" id="9YJ-Ri-p7y"/>
                                                             <constraint firstAttribute="trailing" secondItem="W3A-oP-p8o" secondAttribute="trailing" id="Cuv-rT-Os3"/>
                                                             <constraint firstAttribute="bottom" secondItem="OnM-aN-Iem" secondAttribute="bottom" id="L1y-40-lv2"/>
                                                             <constraint firstAttribute="bottom" secondItem="W3A-oP-p8o" secondAttribute="bottom" id="XcH-Be-tyL"/>
@@ -95,10 +95,10 @@
                                         </collectionView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="TeP-kX-qCU" firstAttribute="centerX" secondItem="zyj-VZ-3VF" secondAttribute="centerX" id="4bc-WC-7LU"/>
-                                        <constraint firstItem="TeP-kX-qCU" firstAttribute="top" secondItem="zyj-VZ-3VF" secondAttribute="top" constant="87" id="99c-cg-GrL"/>
-                                        <constraint firstItem="TeP-kX-qCU" firstAttribute="leading" secondItem="zyj-VZ-3VF" secondAttribute="leading" constant="8" id="G6G-Jv-8lJ" userLabel="Collection View.leading = leading"/>
-                                        <constraint firstItem="TeP-kX-qCU" firstAttribute="centerY" secondItem="zyj-VZ-3VF" secondAttribute="centerY" id="Z3G-BB-H7a"/>
+                                        <constraint firstItem="TeP-kX-qCU" firstAttribute="leading" secondItem="zyj-VZ-3VF" secondAttribute="leading" constant="10" id="01p-SA-47g"/>
+                                        <constraint firstItem="TeP-kX-qCU" firstAttribute="top" secondItem="zyj-VZ-3VF" secondAttribute="top" constant="87" id="1fI-WI-u8q"/>
+                                        <constraint firstAttribute="trailing" secondItem="TeP-kX-qCU" secondAttribute="trailing" constant="10" id="tdM-rL-RHo"/>
+                                        <constraint firstAttribute="bottom" secondItem="TeP-kX-qCU" secondAttribute="bottom" constant="87" id="w3K-xa-tcc"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>
@@ -115,7 +115,6 @@
                             <constraint firstAttribute="bottom" secondItem="Qag-KC-LNQ" secondAttribute="bottom" id="SEt-oh-pe9"/>
                             <constraint firstItem="Qag-KC-LNQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bvR-2L-9Uh"/>
                             <constraint firstItem="Qag-KC-LNQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dn9-yi-PaR"/>
-                            <constraint firstItem="TeP-kX-qCU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="swl-YP-GqQ"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="896"/>

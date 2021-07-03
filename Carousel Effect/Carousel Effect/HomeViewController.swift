@@ -61,8 +61,22 @@ extension HomeViewController:UICollectionViewDelegateFlowLayout {
         return 2 * Storyboard.CellPadding
     }
     
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+//        let cellWidth = Int(flowLayout.itemSize.width)
+//        let cellSpacing = Int(flowLayout.minimumInteritemSpacing)
+//        let cellCount =  1
+//
+//        let totalCellWidth = cellWidth * cellCount
+//        let totalSpacingWidth = cellSpacing * (cellCount - 1)
+//
+//        let inset = (collectionView.bounds.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2
+//
+//        return UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
+//    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: Storyboard.CellPadding, bottom: 0, right: Storyboard.CellPadding)
+        return UIEdgeInsets(top: 0, left: Storyboard.CellPadding - 10, bottom: 0, right: Storyboard.CellPadding)
     }
 }
 
@@ -70,13 +84,9 @@ extension HomeViewController:UIScrollViewDelegate{
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
         let originPoint = targetContentOffset.pointee;
-        
         var index = Int(originPoint.x / UIScreen.main.bounds.width)
-        
         let offset = Int(originPoint.x) % Int(UIScreen.main.bounds.width)
-        
         index += (offset > Int(UIScreen.main.bounds.width/2) ? 1 : 0)
-        
         targetContentOffset.pointee = CGPoint(x: index * Int(UIScreen.main.bounds.width), y: 0)
     }
 }
