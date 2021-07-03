@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8ABB0784268FD69700ED3A25 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB0783268FD69700ED3A25 /* InterestCollectionViewCell.swift */; };
+		8ABB0787268FD6B600ED3A25 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB0786268FD6B600ED3A25 /* Interest.swift */; };
 		8AE32F5F268911470047011B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE32F5E268911470047011B /* AppDelegate.swift */; };
 		8AE32F61268911470047011B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE32F60268911470047011B /* SceneDelegate.swift */; };
-		8AE32F63268911470047011B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE32F62268911470047011B /* ViewController.swift */; };
+		8AE32F63268911470047011B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE32F62268911470047011B /* HomeViewController.swift */; };
 		8AE32F66268911470047011B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE32F64268911470047011B /* Main.storyboard */; };
 		8AE32F682689114B0047011B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE32F672689114B0047011B /* Assets.xcassets */; };
 		8AE32F6B2689114B0047011B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE32F692689114B0047011B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8ABB0783268FD69700ED3A25 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ABB0786268FD6B600ED3A25 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		8AE32F5B268911470047011B /* Carousel Effect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carousel Effect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE32F5E268911470047011B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AE32F60268911470047011B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AE32F62268911470047011B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AE32F62268911470047011B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8AE32F65268911470047011B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AE32F672689114B0047011B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AE32F6A2689114B0047011B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				8AE32F5E268911470047011B /* AppDelegate.swift */,
 				8AE32F60268911470047011B /* SceneDelegate.swift */,
-				8AE32F62268911470047011B /* ViewController.swift */,
+				8AE32F62268911470047011B /* HomeViewController.swift */,
+				8ABB0783268FD69700ED3A25 /* InterestCollectionViewCell.swift */,
+				8ABB0786268FD6B600ED3A25 /* Interest.swift */,
 				8AE32F64268911470047011B /* Main.storyboard */,
 				8AE32F672689114B0047011B /* Assets.xcassets */,
 				8AE32F692689114B0047011B /* LaunchScreen.storyboard */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AE32F63268911470047011B /* ViewController.swift in Sources */,
+				8ABB0784268FD69700ED3A25 /* InterestCollectionViewCell.swift in Sources */,
+				8AE32F63268911470047011B /* HomeViewController.swift in Sources */,
 				8AE32F5F268911470047011B /* AppDelegate.swift in Sources */,
 				8AE32F61268911470047011B /* SceneDelegate.swift in Sources */,
+				8ABB0787268FD6B600ED3A25 /* Interest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
