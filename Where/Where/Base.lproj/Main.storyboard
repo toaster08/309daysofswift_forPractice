@@ -16,57 +16,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GdX-gP-MYL">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="GdX-gP-MYL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RwM-Ug-LlK">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ypb-0l-Vpo">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-qM-7Kk">
-                                            <rect key="frame" x="57" y="69" width="300" height="128"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <rect key="frame" x="30" y="100" width="354" height="175"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5C-HK-uqZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="354" height="175"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Q5C-HK-uqZ" secondAttribute="trailing" id="DqD-gO-Shq"/>
+                                                <constraint firstItem="Q5C-HK-uqZ" firstAttribute="top" secondItem="K0Y-qM-7Kk" secondAttribute="top" id="Gyz-He-x90"/>
+                                                <constraint firstItem="Q5C-HK-uqZ" firstAttribute="centerY" secondItem="K0Y-qM-7Kk" secondAttribute="centerY" id="HIj-0d-6mw"/>
+                                                <constraint firstItem="Q5C-HK-uqZ" firstAttribute="centerX" secondItem="K0Y-qM-7Kk" secondAttribute="centerX" id="Iuc-ve-ujR"/>
+                                                <constraint firstAttribute="bottom" secondItem="Q5C-HK-uqZ" secondAttribute="bottom" id="Ku8-d5-vn8"/>
+                                                <constraint firstItem="Q5C-HK-uqZ" firstAttribute="leading" secondItem="K0Y-qM-7Kk" secondAttribute="leading" id="QEb-uE-ScL"/>
+                                            </constraints>
                                         </view>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vsB-Xw-8Ja">
-                                            <rect key="frame" x="57" y="635" width="300" height="81"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Find my location" translatesAutoresizingMaskIntoConstraints="NO" id="vsB-Xw-8Ja">
+                                            <rect key="frame" x="44" y="718" width="326" height="78"/>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppY-ZU-Y8H">
-                                            <rect key="frame" x="57" y="635" width="300" height="81"/>
-                                            <state key="normal" title="Button"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppY-ZU-Y8H">
+                                            <rect key="frame" x="57" y="713" width="300" height="81"/>
+                                            <state key="normal" title="Find my location">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="myLocationButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7U-RA-gvF"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vsB-Xw-8Ja" firstAttribute="leading" secondItem="K0Y-qM-7Kk" secondAttribute="leading" id="4hD-M3-9qN"/>
-                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="top" secondItem="vsB-Xw-8Ja" secondAttribute="top" id="AX1-V8-vOf"/>
-                                        <constraint firstItem="K0Y-qM-7Kk" firstAttribute="top" secondItem="Ypb-0l-Vpo" secondAttribute="top" constant="69" id="C9L-Cf-hyX"/>
-                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="trailing" secondItem="vsB-Xw-8Ja" secondAttribute="trailing" id="E1x-4D-fOx"/>
-                                        <constraint firstItem="vsB-Xw-8Ja" firstAttribute="centerX" secondItem="Ypb-0l-Vpo" secondAttribute="centerX" id="OAq-jC-WSx"/>
-                                        <constraint firstItem="vsB-Xw-8Ja" firstAttribute="leading" secondItem="Ypb-0l-Vpo" secondAttribute="leading" constant="57" id="Ysi-UG-N4E"/>
-                                        <constraint firstAttribute="bottom" secondItem="vsB-Xw-8Ja" secondAttribute="bottom" constant="102" id="ZdG-YW-3x7"/>
-                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="bottom" secondItem="vsB-Xw-8Ja" secondAttribute="bottom" id="ZxN-WX-GS1"/>
-                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="leading" secondItem="vsB-Xw-8Ja" secondAttribute="leading" id="atc-BJ-u71"/>
-                                        <constraint firstItem="vsB-Xw-8Ja" firstAttribute="trailing" secondItem="K0Y-qM-7Kk" secondAttribute="trailing" id="wPj-9E-SFn"/>
+                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="bottom" secondItem="vsB-Xw-8Ja" secondAttribute="bottom" constant="-2" id="1Ma-fr-dMj"/>
+                                        <constraint firstAttribute="trailing" secondItem="K0Y-qM-7Kk" secondAttribute="trailing" constant="30" id="4wd-g7-prF"/>
+                                        <constraint firstItem="K0Y-qM-7Kk" firstAttribute="top" secondItem="Ypb-0l-Vpo" secondAttribute="top" constant="100" id="C9L-Cf-hyX"/>
+                                        <constraint firstItem="K0Y-qM-7Kk" firstAttribute="leading" secondItem="Ypb-0l-Vpo" secondAttribute="leading" constant="30" id="FJX-Bb-Jib"/>
+                                        <constraint firstItem="K0Y-qM-7Kk" firstAttribute="centerX" secondItem="Ypb-0l-Vpo" secondAttribute="centerX" id="SoJ-O4-cPB"/>
+                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="top" secondItem="vsB-Xw-8Ja" secondAttribute="top" constant="-5" id="bLM-6h-MGp"/>
+                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="trailing" secondItem="vsB-Xw-8Ja" secondAttribute="trailing" constant="-13" id="bTH-9Y-64o"/>
+                                        <constraint firstItem="vsB-Xw-8Ja" firstAttribute="centerX" secondItem="Ypb-0l-Vpo" secondAttribute="centerX" id="e8f-dJ-sAx"/>
+                                        <constraint firstAttribute="bottom" secondItem="vsB-Xw-8Ja" secondAttribute="bottom" constant="100" id="fqq-Qm-Pce"/>
+                                        <constraint firstItem="ppY-ZU-Y8H" firstAttribute="leading" secondItem="vsB-Xw-8Ja" secondAttribute="leading" constant="13" id="tIU-13-eWb"/>
                                         <constraint firstAttribute="bottom" secondItem="K0Y-qM-7Kk" secondAttribute="bottom" constant="621" id="x7F-kP-d4k"/>
                                     </constraints>
                                 </view>
-                                <blurEffect style="regular"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GdX-gP-MYL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ow-Yt-2KX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GdX-gP-MYL" secondAttribute="bottom" id="9Z1-j8-hoY"/>
-                            <constraint firstItem="RwM-Ug-LlK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FO8-5q-b6p"/>
-                            <constraint firstItem="GdX-gP-MYL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rbe-Qg-CUF"/>
+                            <constraint firstAttribute="bottom" secondItem="GdX-gP-MYL" secondAttribute="bottom" id="9Z1-j8-hoY"/>
+                            <constraint firstItem="RwM-Ug-LlK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FO8-5q-b6p"/>
+                            <constraint firstItem="GdX-gP-MYL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="Rbe-Qg-CUF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RwM-Ug-LlK" secondAttribute="trailing" id="kWM-ai-MNn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GdX-gP-MYL" secondAttribute="trailing" id="mC3-ZO-FDF"/>
                             <constraint firstItem="RwM-Ug-LlK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ov1-QU-rdZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RwM-Ug-LlK" secondAttribute="bottom" id="rQm-Oj-4JP"/>
+                            <constraint firstAttribute="bottom" secondItem="RwM-Ug-LlK" secondAttribute="bottom" id="rQm-Oj-4JP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="Q5C-HK-uqZ" id="fca-gu-ER2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,6 +98,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Find my location" width="326" height="78"/>
+        <image name="bg" width="375" height="667"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
